@@ -1,0 +1,13 @@
+{
+  "name": "PulseTrack - Social Media Analytics",
+  "short_name": "PulseTrack",
+  "description": "Analytics SaaS for creators & small businesses.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0f19",
+  "theme_color": "#5b7cfa",
+  "icons": [
+    { "src": "/icon.svg", "type": "image/svg+xml", "sizes": "any" },
+    { "src": "/maskable.svg", "type": "image/svg+xml", "purpose": "maskable", "sizes": "any" }
+  ]
+}

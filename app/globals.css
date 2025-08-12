@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background: 220 28% 7%;
+  --color-foreground: 220 16% 96%;
+  --color-primary: 230 95% 67%;
+  --color-secondary: 270 90% 70%;
+  --color-accent: 160 85% 55%;
+  --color-muted: 220 10% 40%;
+  --color-card: 220 20% 12%;
+  --color-border: 220 15% 18%;
+}
+
+.dark {
+  --color-background: 220 28% 4%;
+  --color-foreground: 220 16% 96%;
+  --color-card: 220 20% 8%;
+  --color-border: 220 15% 14%;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  @apply bg-background text-foreground antialiased; 
+}
+
+.glass {
+  @apply bg-card/60 backdrop-blur-md border border-border/60 shadow-glass;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/60;
+}
+.btn-primary {
+  @apply btn bg-primary text-black hover:scale-[1.02] hover:shadow-lg;
+}
+.btn-secondary {
+  @apply btn bg-secondary text-black hover:scale-[1.02] hover:shadow-lg;
+}
+
+.container-fluid {
+  @apply mx-auto w-full max-w-7xl px-6;
+}

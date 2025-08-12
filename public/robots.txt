@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://pulsetrack.app
+
+# Sitemaps
+Sitemap: https://pulsetrack.app/sitemap.xml
